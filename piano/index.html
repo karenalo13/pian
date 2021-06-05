@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Titlu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <picture>
+    <source media="(max-width: 10px)" srcset="pianoMobile.jpg">
+    <source media="(min-width: 400px)" srcset="pian1080.jpg">
+    <source media="(min-width: 720px)" srcset="pian1080.jpg">
+    <img src="pian720.jpg" alt="Chris standing up holding his daughter Elva">
+  </picture>
+
+  <div class="container">
+    <div class="buton" onclick="qClick()">
+      <label>
+        Q<br />
+        <span style=" font-size:0.5em">BOOM</span><br />
+      </label>
+    </div>
+    <div class="buton" onclick="wClick()">
+      <label>
+        W<br />
+        <span style=" font-size:0.5em">BOOM</span><br />
+      </label>
+    </div>
+    <div class="buton" onclick="eClick()">
+      <label>
+        Q<br />
+        <span style=" font-size:0.5em">BOOM</span><br />
+      </label>
+    </div>
+    <div class="buton" onclick="aClick()">
+      <label>
+        Q<br />
+        <span style=" font-size:0.5em">BOOM</span><br />
+      </label>
+    </div>
+    <div class="buton" onclick="sClick()">
+      <label>
+        Q<br />
+        <span style=" font-size:0.5em">BOOM</span><br />
+      </label>
+    </div>
+    <div class="buton" onclick="dClick()">
+      <label>
+        Q<br />
+        <span style=" font-size:0.5em">BOOM</span><br />
+      </label>
+    </div>
+
+    <div class="buton" onclick="zClick()">
+      <label>
+        Q<br />
+        <span style=" font-size:0.5em">BOOM</span><br />
+      </label>
+    </div>
+
+    <div class="buton" onclick="xClick()">
+      <label>
+        Q<br />
+        <span style=" font-size:0.5em">BOOM</span><br />
+      </label>
+    </div>
+
+    <div class="buton" onclick="cClick()">
+      <label>
+        Q<br />
+        <span style=" font-size:0.5em">BOOM</span><br />
+      </label>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script>
+
+    function qClick() {
+      var audio = new Audio('sounds/boom.wav');
+      audio.play();
+    }
+
+    function wClick() {
+      var audio = new Audio('sounds/clap.wav');
+      audio.play();
+    }
+
+    function eClick() {
+      var audio = new Audio('sounds/hihat.wav');
+      audio.play();
+    }
+
+    function aClick() {
+      var audio = new Audio('sounds/kick.wav');
+      audio.play();
+    }
+
+    function sClick() {
+      var audio = new Audio('sounds/openhat.wav');
+      audio.play();
+    }
+
+    function dClick() {
+      var audio = new Audio('sounds/ride.wav');
+      audio.play();
+    }
+
+    function zClick() {
+      var audio = new Audio('sounds/snare.wav');
+      audio.play();
+    }
+
+    function xClick() {
+      var audio = new Audio('sounds/tink.wav');
+      audio.play();
+    }
+
+    function cClick() {
+      var audio = new Audio('sounds/tom.wav');
+      audio.play();
+    }
+
+
+
+    document.addEventListener('keydown', (event) => {
+      const keyName = event.key;
+
+      if (keyName === 'Q' || keyName === 'q') {
+        qClick()
+      }
+
+      if (keyName === 'W' || keyName === 'w') {
+        wClick()
+      }
+      if (keyName === 'e' || keyName === 'E') {
+        eClick()
+      }
+
+      if (keyName === 'A' || keyName === 'a') {
+        aClick()
+      }
+      if (keyName === 'S' || keyName === 's') {
+        sClick()
+      }
+
+      if (keyName === 'D' || keyName === 'd') {
+        dClick()
+      }
+      if (keyName === 'z' || keyName === 'Z') {
+        zClick()
+      }
+
+      if (keyName === 'x' || keyName === 'X') {
+        xClick()
+      }
+      if (keyName === 'C' || keyName === 'c') {
+        cClick()
+      }
+
+
+
+    }, false);
+  </script>
+
+</body>
+
+</html>
